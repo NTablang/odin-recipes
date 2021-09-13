@@ -3,16 +3,88 @@
     <head>
         <title>My recipes page</title>
         <meta charset = "UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <h1>
-            Me Homepage! 😆
-        </h1>
+    <style>
+        body {
+            background: #5C3D2E           
+        }
 
-        <p>
-            Check out this link: <br>
-            <a href = "recipes/lasagna.html">The Lasagna Page</a>
-        </p>
+        h1 {
+            text-align: center;
+            color: #293321;
+            font-family: "Press Start 2P", monospace;
+            font-size: 30px;
+        }
+
+        h5 {
+            color: #293321;
+            text-align: center;
+            font-size: 10px;
+            font-family: "Press Start 2P", monospace;
+            margin-top: -0.5em;
+        }
+
+        
+
+        #center-headline{
+            width: auto;
+            margin-right: 300px;
+            margin-left: 300px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border: 3px solid #293321;
+            background-color: wheat;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .iceCreamm {
+            width: 400px;
+        }
+
+        .parent {
+        position: relative;
+        top: 0;
+        left: 0;
+        }
+        .image1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        
+        margin-left: 50px;
+        }
+        .image2 {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        
+        height: 75%;
+        width: 25%;
+        margin-left: 4%;
+        }
+
+    </style>
+
+    <body>
+        <div class = "div1" id=center-headline>
+            <h1>
+                Odin Recipes
+                <h5>
+                    Desserts Edition
+                </h5>
+            </h1>
+        </div>
+        
+        <div class = "parent">
+            <img src = "/images/icecream.gif" alt = "a GIF showing a fried ice-cream and brownie." class = "iceCreamm image2">
+            <img src = "/images/monitor.png" alt = "a monitor" class = "image1">
+        </div>
+       
     </body>
 </html>
