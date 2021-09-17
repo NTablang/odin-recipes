@@ -13,83 +13,225 @@
             background: #5C3D2E           
         }
 
+        /* Header */
         h1 {
-            text-align: center;
-            color: #293321;
             font-family: "Press Start 2P", monospace;
-            font-size: 30px;
-        }
-
-        h5 {
-            color: #293321;
             text-align: center;
-            font-size: 10px;
-            font-family: "Press Start 2P", monospace;
-            margin-top: -0.5em;
+            color: #ab7900;
+            font-size: 35px;
         }
 
-        
-
-        #center-headline{
-            width: auto;
-            margin-right: 300px;
-            margin-left: 300px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            border: 3px solid #293321;
-            background-color: wheat;
-            border-radius: 5px;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .iceCreamm {
-            width: 400px;
-        }
-
+        /* Necessary for putting the gif below the monitor screen*/
         .parent {
         position: relative;
         top: 0;
         left: 0;
         }
-        .image1 {
+        .tv {
         position: relative;
+        margin-left: 50px;
         top: 0;
         left: 0;
-        
-        margin-left: 50px;
         }
-        .image2 {
+        .icecr {
         position: absolute;
+        margin-left: 15%;
         top: 30px;
         left: 20px;
-        
         height: 75%;
-        width: 25%;
-        margin-left: 4%;
+        width: 65%;
         }
+        /* Multi-class solution ends here */
+
+        #firstdiv {
+            width: auto;
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-bottom: 2%;
+
+            border: 3px solid #D29500;
+            background-color: #DDD2C0;
+            border-radius: 5px;
+        }
+
+        /* Gives us two big divs side by side*/
+        .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        }
+
+        /* Left div components*/
+        .dialogbox {
+            margin-top: 1%;
+            width: 90%;
+            height: 28%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .dialogbox-typography {
+            position: absolute;
+            font-family: "Press Start 2P";
+            color: black;
+            font-size: 15px;
+            margin-top: 4%;
+            margin-left: 6%;
+            line-height: 150%;
+        }
+
+        /* Right div components */
+        .grid-container-right {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 5px;
+        }
+
+        .foodpicture {
+            border-radius: 50%;
+            width: 70%;
+            margin-top: 28%;
+            margin-left: -1%;
+            position: relative;
+        }
+
+        .white-circle {
+            margin-top: 3.7%;
+            margin-left: -0.7%;
+            width: 11.9%;
+            border-radius: 50%;
+            position:absolute;
+        }
+
+        .divright-typography {
+            font-family: "Press Start 2P", monospace;
+            font-size: 25px;
+            color: #DDD2C0;
+            margin-top: 13%;
+        }
+
+        .stars {
+            width: 7%;
+            margin-top: 3%;
+            margin-right: -5%;
+        }
+       
+        /* animations */
+        .box {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+        }
+        .bounce-4 {
+            animation-name: bounce-4;
+            animation-timing-function: ease;
+        }
+        @keyframes bounce-4 {
+            0%   { transform: scale(1,1)    translateY(0); }
+            10%  { transform: scale(1.1,.9) translateY(0); }
+            30%  { transform: scale(.9,1.1) translateY(-10px); }
+            50%  { transform: scale(1,1)    translateY(0); }
+            100% { transform: scale(1,1)    translateY(0); }
+        }
+        
+        a {
+        transition: color 0.2s; /* For modern browsers */
+        }
+        a:hover {
+            color: #D29500;
+        }
+        /* end of animations here */
+        
+        
 
     </style>
 
     <body>
-
-
-        <div id=center-headline>
+        <div id = firstdiv>
             <h1>
                 Odin Recipes
-                <h5>
+                <h1 style = "font-size: 15px; margin-top: -0.5em">
                     Desserts Edition
-                </h5>
+                </h1>
             </h1>
         </div>
-        
 
-        <div class = "parent">
-            <img src = "/images/icecream.gif" alt = "a GIF showing a fried ice-cream and brownie." class = "iceCreamm image2">
-            <img src = "/images/monitor.png" alt = "a monitor" class = "image1">
+
+        <div class="grid-container">
+            <div style = "margin-top: -3%">
+                <div class = "parent">
+                    <img src = "/images/icecream.gif" alt = "a GIF showing a fried ice-cream and brownie." class = "iceCreamm icecr">
+                    <img src = "/images/monitor.png" alt = "a monitor" class = "tv">
+                </div>
+                <h3 class = "dialogbox-typography">
+                    ¡Hola! Kamusta! On the <br> 
+                    right, you could see a <br>
+                    bunch of desserts!
+                </h3>
+                <img src = "/images/dialogbox2.png" alt = "dialog box as a graphical user interface." class = "dialogbox">
+            </div>
+        
+            <div style = "margin-top: -5%;">
+
+                <div style = "margin-top: -1%; " class = "grid-container-right">
+                    <div style = "height: auto;">
+                        <img src = "images/white.png" alt = "white square" class = "white-circle ">
+                        <img src = "images/choc.png" alt = "choco smoothie" class = "foodpicture ">
+                    </div>
+                    <div style = "height: auto;" class = "divright-typography">
+                        <a href= "recipes/lasagna.html" class = "divright-typography">
+                        Oaty Hot Chocolate Smoothie
+                        </a>
+                        <h4 style = "margin-top: 5%; font-size: 15px;margin-top: 5%">
+                            Tastiness: <br>
+                            <img src = "images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                            <img src = "images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                            <img src = "images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                            <img src = "images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                        </h4>
+                    </div>
+                </div>
+
+                <div style = "margin-top: -6%; "class = "grid-container-right">
+                    <div class = "div-right">
+                        <img src = "images/white.png" alt = "white square" class = "white-circle ">
+                        <img src = "images/pumpkin.png" alt = "punpkin Cupcakes" class = "foodpicture ">
+                    </div>
+                    <div class = "div-right divright-typography">
+                        <a href= "recipes/lasagna.html" class = "divright-typography">
+                        Pumpkin Cupcakes
+                        </a>
+                        <h4 style = "margin-top: 5%; font-size: 15px;margin-top: 5%">
+                            Tastiness: <br>
+                            <img src = "images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                            <img src = "images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                            <img src = "images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                        </h4>
+                    </div>
+                </div>
+
+                <div style = "margin-top: -2%; "class = "grid-container-right">
+                    <div class = "div-right">
+                        <img src = "images/white.png" alt = "white square" class = "white-circle ">
+                        <img src = "images/brownies.png" alt = "brownies" class = "foodpicture ">
+                    </div>
+                    <div class = "div-right divright-typography">
+                        <a href= "recipes/lasagna.html" class = "divright-typography">
+                        Chewy Brownies
+                        </a>
+                        <h4 style = "margin-top: 5%; font-size: 15px; margin-top: 5%">
+                            Tastiness: <br>
+                            <img src = "images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                            <img src = "images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                            <img src = "images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                            <img src = "images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
         </div>
        
-
-
     </body>
 </html>
