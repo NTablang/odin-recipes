@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brownies Page</title>
+        <meta charset = "UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel = "icon" href= "../images/akita.png" type = "image/x-icon">
+    </head>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #5C3D2E;
+            
+            margin-left: 5%;
+            margin-right: 10%;
+            
+            
+        }
+
+        #firstdiv {
+            width: auto;
+            height: 70%;
+           /*To be changed: margin-left*/
+            
+            
+            margin-bottom: 3%;
+            margin-top: 2%;
+            margin-left: 5%;
+            margin-right: 0%;
+
+            border: 3px solid #D29500;
+            background-color: #DDD2C0;
+            border-radius: 5px;
+
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-gap: 3%;
+           
+            
+
+        }
+        h1 {
+            font-family: "Press Start 2P", monospace;
+            text-align: center;
+            color: #ab7900;
+            font-size: 40px;
+        }
+
+        .verticaltext{
+            font-family: "Poppins", monospace;
+            color: #DDD2C0;
+            transform: rotate(90deg);
+            /*border: 3px red solid; */
+            position: absolute;
+            
+            margin-top: 30%;
+            margin-left: -28%;
+            text-align: left;
+            font-size: 10px;
+            text-align: left;
+            
+            
+
+        }
+
+        .homeimage {
+            width: 70%;
+            margin-left: 50%;
+            
+            
+           
+        }
+        .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-gap: 3%;
+        
+        }
+       
+        .home-typography {
+            
+            margin-left: 90%;
+            color: #DDD2C0; font-family: "Press Start 2P", monospace;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .foodpictureheader {
+            border-radius: 50%;
+            width: 140%;
+            margin-top: -15%;
+            margin-left: -10%;
+            position: relative;
+             border:#D29500 4px solid;
+        }
+       
+        .stars {
+            width: 7%;
+            margin-top: 3%;
+            margin-right: -5%;
+        }
+       
+        /* animations */
+        .box {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+            margin-left: 3%;
+        }
+        .bounce-4 {
+            animation-name: bounce-4;
+            animation-timing-function: ease;
+        }
+        @keyframes bounce-4 {
+            0%   { transform: scale(1,1)    translateY(0); }
+            10%  { transform: scale(1.1,.9) translateY(0); }
+            30%  { transform: scale(.9,1.1) translateY(-10px); }
+            50%  { transform: scale(1,1)    translateY(0); }
+            100% { transform: scale(1,1)    translateY(0); }
+        }
+        .divright-typography {
+            font-family: "Press Start 2P", monospace;
+            font-size: 25px;
+            color: #DDD2C0;
+            line-height: 130%;
+        }
+
+        .akitapic {
+            width: 9%;
+            position: absolute;
+            margin-top: 1%;
+        }
+
+        li:before { 
+            content: '✓'; margin-left: -25px; margin-right: 10px; 
+            list-style: none;
+            
+        } 
+        span{
+            visibility: visible;
+            margin-left: 190%;
+        }
+        a:hover span{
+            visibility: visible;
+            margin-left: 10%; 
+            margin-top: 30px;
+        }
+
+        .procedure {
+            font-family: "Press Start 2P", monospace;
+            text-align: left;
+            color: #DDD2C0;
+            font-size: 20px;
+        }
+    </style>
+
+    <body>
+        <a name="top"></a>
+
+        <!-- TOP SIDE-->
+        <div class = "grid-container">
+            <!-- Side vertical text-->
+            <div class = "verticaltext">
+                <h3> 
+                    Welcome to the Oaty Hot Chocolate page. <br>
+                    Chewy Brownies recipe yields the chewiest brownies known to man, packed with gooey melted chocolate. You have to give them a go! <br>
+                    All rights reserved. Nathan Tablang 2021. This website is made with help from The Odin Project and Mr and Ms Shibas.
+                </h3>
+            </div>  
+            
+            
+
+            <!-- first div home icon and links-->
+            <div>
+                <a href = "../index.html" class = "home-typography ">
+                    <div>
+                        <span>woof!</span>
+                        <img href = "index.html" src = "../images/akita.png" alt = "pixelated home art image" class = "homeimage" />
+                    </div>
+                    <h3 style = "margin-left: 79%; margin-top: 6%; font-size: 15px;">
+                        Home
+                        
+                    </h3>
+                </a>
+            </div>
+            
+            
+            <!-- first div header banner-->
+            <div id = "firstdiv">
+                <img src = "../images/choc.png" alt = "choco smoothie" class = "foodpictureheader ">
+                <div>
+                    <h1>
+                        Oaty Hot 
+                        <br>
+                        Chocolate 
+                        <br>
+                        Smoothie
+                        
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+        <!-- TOP SIDE ENDS HERE-->
+        
+        <!-- stars animation-->
+        <div style = "margin-left: 23%; margin-top: -4%; display: grid; grid-template-columns: 1fr 3fr;">
+            <div>
+                <h4 style = "font-size: 19px;" class = "divright-typography">
+                    Tastiness:
+                </h4>
+            </div>
+            <div style = "font-size: 19px; margin-left: -7%; margin-top: -2%;">
+                <img src = "../images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4"> 
+                <img src = "../images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                <img src = "../images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                <img src = "../images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+            </div>
+            
+        </div>
+        <!-- stars animation ends here-->
+
+        <div style = "margin-left: 10%;">
+            <!-- split a div into two divs side by side-->
+            <div style = "display: grid; grid-template-columns: 1fr 3fr;grid-gap: 3%;">
+                <!-- left div-->
+                <div style = "background: #DDD2C0; border-radius: 10%; border:#D29500 4px solid; width: auto; height:43%;">
+                    <img src = "../images/shiba.png" alt = "shiba inu dog pixelated art" style = "width: 99%; border-radius: 5%;">
+                    
+                </div>
+                <!-- right div-->
+                <div class = "divright-typography">
+                    Mr. Shiba wants:
+                    <ul>
+                        <li>1 cup butter melted</li>
+                        <li>2 tablespoons vegetable oil (coconut or canola)</li>
+                        <li>1 cup plus 2 tablespoons dark brown sugar</li>
+                        <li>1 cup plus 2 tablespoosn white sugar</li>
+                        <li>4 large eggs (room temperature)</li>
+                        <li>4 teaspoons vanilla extract</li>
+                        <li>1 cup all purpose flour</li>
+                        <li>1 cup good quality (unsweetened cocoa powder)</li>
+                        <li>1 teaspoon salt</li>
+                        <li>1 1/2 cups bittersweet chocolate</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- splitted div: ingredients list ends here-->
+        </div>
+
+        <div style = "margin-left: 4%;">
+            <!-- section banner-->
+            <div id = "firstdiv" style = "margin-left: 15%; margin-right: 18%;">
+                <h1 style = "text-align: center; text-indent: 37%; font-size: 30px;">
+                    !Instructions!
+                </h1>
+            </div>
+
+            <!-- first step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        1
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Preheat the oven to 350°F (180°C) then butter and line an 8x8 inch baking tray with parchment paper and set aside.
+                    </h2>
+                </div>
+            </div>
+
+            <!-- second step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        2
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        In a large bowl add the melted butter, oil, both sugars, eggs, and vanilla.                
+                    </h2>
+                </div>
+            </div>
+
+            <!-- third step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        3
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Using an electric hand mixer, whisk for about 5 minutes at high speed until the mixture becomes very thick. You can also do this by hand but you will just really need to give it some welly.                
+                    </h2>
+                </div>
+            </div>
+
+            <!-- fourth step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        4
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Over the same bowl sift in the flour and cocoa powder. Gently fold the dry 
+                        ingredients into the wet ingredients until JUST combined (do NOT over mix). 
+                        Fold in half of the chocolate chunks.                    
+                    </h2>
+                </div>
+            </div>
+
+            <!-- fifth step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        5
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Pour the batter into the prepared pan, then smooth the top. Generously top with the remaining chocolate chunks.                  
+                    </h2>
+                </div>
+            </div>
+            
+            <!-- sixth step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        6
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Bake for 45-50 minutes, or until the center of the brownies no longer jiggles and is JUST set to the touch.                    </h2>
+                </div>
+            </div>
+             <!-- seventh step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        7
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Remove from the oven and allow to cool to room temperature before removing from the baking tray and slicing into 16 brownies. Enjoy!                </div>
+            </div>
+            
+        </div>
+        </div>
+
+       
+        
+
+        
+        
+        <!-- -->
+        <div style = "margin-left: -4%; margin-top: -10%; width:6%;">
+            <a href = "#top">
+                <img href = "index.html" src = "../images/akita.png" alt = "pixelated home art image" style = "width: 50px;" />
+                <h3 style = "font-size: 15px;margin-left: -10%; margin-top: 2%;" class = "home-typography">
+                    top
+                </h3>
+                
+                
+            </a>
+
+
+            <!--
+                <a href = "#top" style = "border: red 3px solid;">
+                <div>
+                    <img href = "index.html" src = "../images/akita.png" alt = "pixelated home art image" style = "width: 5%;" />
+                    <h3 style = "font-size: 15px; border: 3px red solid; margin-right: 60%;" class = "home-typography logo">
+                        top
+                    </h3>
+                </div>
+            </a>
+            -->
+        </div>
+
+        
+    </body>
+</html>

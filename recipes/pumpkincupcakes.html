@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pumpkin Cupcakes Page</title>
+        <meta charset = "UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel = "icon" href= "../images/akita.png" type = "image/x-icon">
+    </head>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #5C3D2E;
+            
+            margin-left: 5%;
+            margin-right: 10%;
+            
+            
+        }
+
+        #firstdiv {
+            width: auto;
+            height: 70%;
+           /*To be changed: margin-left*/
+            
+            
+            margin-bottom: 3%;
+            margin-top: 2%;
+            margin-left: 5%;
+            margin-right: 0%;
+
+            border: 3px solid #D29500;
+            background-color: #DDD2C0;
+            border-radius: 5px;
+
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-gap: 3%;
+           
+            
+
+        }
+        h1 {
+            font-family: "Press Start 2P", monospace;
+            text-align: center;
+            color: #ab7900;
+            font-size: 40px;
+        }
+
+        .verticaltext{
+            font-family: "Poppins", monospace;
+            color: #DDD2C0;
+            transform: rotate(90deg);
+            /*border: 3px red solid; */
+            position: absolute;
+            
+            margin-top: 23%;
+            margin-left: -20%;
+            text-align: left;
+            font-size: 10px;
+            text-align: left;
+            
+            
+
+        }
+
+        .homeimage {
+            width: 70%;
+            margin-left: 50%;
+            
+            
+           
+        }
+        .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-gap: 3%;
+        
+        }
+       
+        .home-typography {
+            
+            margin-left: 90%;
+            color: #DDD2C0; font-family: "Press Start 2P", monospace;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .foodpictureheader {
+            border-radius: 50%;
+            width: 140%;
+            margin-top: -15%;
+            margin-left: -10%;
+            position: relative;
+             border:#D29500 4px solid;
+        }
+       
+        .stars {
+            width: 7%;
+            margin-top: 3%;
+            margin-right: -5%;
+        }
+       
+        /* animations */
+        .box {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+            margin-left: 3%;
+        }
+        .bounce-4 {
+            animation-name: bounce-4;
+            animation-timing-function: ease;
+        }
+        @keyframes bounce-4 {
+            0%   { transform: scale(1,1)    translateY(0); }
+            10%  { transform: scale(1.1,.9) translateY(0); }
+            30%  { transform: scale(.9,1.1) translateY(-10px); }
+            50%  { transform: scale(1,1)    translateY(0); }
+            100% { transform: scale(1,1)    translateY(0); }
+        }
+        .divright-typography {
+            font-family: "Press Start 2P", monospace;
+            font-size: 25px;
+            color: #DDD2C0;
+            line-height: 130%;
+        }
+
+        .akitapic {
+            width: 9%;
+            position: absolute;
+            margin-top: 1%;
+        }
+
+        li:before { 
+            content: '✓'; margin-left: -25px; margin-right: 10px; 
+            list-style: none;
+            
+        } 
+        span{
+            visibility: visible;
+            margin-left: 190%;
+        }
+        a:hover span{
+            visibility: visible;
+            margin-left: 10%; 
+            margin-top: 30px;
+        }
+
+        .procedure {
+            font-family: "Press Start 2P", monospace;
+            text-align: left;
+            color: #DDD2C0;
+            font-size: 20px;
+        }
+    </style>
+
+    <body>
+        <a name="top"></a>
+
+        <!-- TOP SIDE-->
+        <div class = "grid-container">
+            <!-- Side vertical text-->
+            <div class = "verticaltext">
+                <h3> 
+                    Welcome to the Pumpkin Cupcakes page. <br>
+                    Pumpkin-flavored foods are extremely popular during the fall and winter months.<br>                 
+                    All rights reserved. Nathan Tablang 2021. This website is made with help from The Odin Project and Mr and Ms Shibas.
+                </h3>
+            </div>  
+            
+            
+
+            <!-- first div home icon and links-->
+            <div>
+                <a href = "../index.html" class = "home-typography ">
+                    <div>
+                        <span>woof!</span>
+                        <img href = "index.html" src = "../images/akita.png" alt = "pixelated home art image" class = "homeimage" />
+                    </div>
+                    <h3 style = "margin-left: 79%; margin-top: 6%; font-size: 15px;">
+                        Home
+                        
+                    </h3>
+                </a>
+            </div>
+            
+            
+            <!-- first div header banner-->
+            <div id = "firstdiv">
+                <img src = "../images/pumpkin.png" alt = "choco smoothie" class = "foodpictureheader ">
+                <div>
+                    <h1>
+                        Pumpkin <br>
+                        Cupcakes
+                        
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+        <!-- TOP SIDE ENDS HERE-->
+        
+        <!-- stars animation-->
+        <div style = "margin-left: 23%; margin-top: -4%; display: grid; grid-template-columns: 1fr 3fr;">
+            <div>
+                <h4 style = "font-size: 19px;" class = "divright-typography">
+                    Tastiness:
+                </h4>
+            </div>
+            <div style = "font-size: 19px; margin-left: -7%; margin-top: -2%;">
+                <img src = "../images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4"> 
+                <img src = "../images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+                <img src = "../images/stars1.png" alt = "stars pixelated art" class = "stars box bounce-4">
+            </div>
+            
+        </div>
+        <!-- stars animation ends here-->
+
+        <div style = "margin-left: 10%;">
+            <!-- split a div into two divs side by side-->
+            <div style = "display: grid; grid-template-columns: 1fr 3fr;grid-gap: 3%;">
+                <!-- left div-->
+                <div style = "background: #DDD2C0; border-radius: 10%; border:#D29500 4px solid; width: auto; height:45%;">
+                    <img src = "../images/shiba.png" alt = "shiba inu dog pixelated art" style = "width: 99%; border-radius: 5%;">
+                    
+                </div>
+                <!-- right div-->
+                <div class = "divright-typography">
+                    Mr. Shiba wants:
+                    <ul>
+                        <li>1 and a half cups of light brown sugar</li>
+                        <li>1 half cup of vegetable oil</li>
+                        <li>3 large eggs</li>
+                        <li>2 tablespoons maple syrup</li>
+                        <li>2 teaspoons vanilla extract</li>
+                        <li>1 cup pumpkin puree</li>
+                        <li>2 cups app-purpose flour</li>
+                        <li>2 teaspoons pumpkin pie spice</li>
+                        <li>2 teaspoons cinnamon</li>
+                        <li>1 and a half teaspoons of baking powder</li>
+                        <li>3/4 teaspoon baking soda</li>
+                        <li>3/4 teaspoon salt</li>
+                        <li>3/4 cup milk</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- splitted div: ingredients list ends here-->
+        </div>
+
+        <div style = " margin-left: 4%;">
+            <!-- section banner-->
+            <div id = "firstdiv" style = "margin-left: 15%; margin-right: 18%;">
+                <h1 style = "text-align: center; text-indent: 37%; font-size: 30px;">
+                    !Instructions!
+                </h1>
+            </div>
+
+            <!-- first step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        1
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        For the cupcakes: Preheat the oven to 350°F. Line a cupcake pan with cupcake liners.
+                    </h2>
+                </div>
+            </div>
+
+            <!-- second step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        2
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        In a large mixing bowl, combine the sugar, vegetable oil, eggs, maple syrup and vanilla extract. 
+                        Beat on medium speed until the eggs and oil are well incorporated and the batter is lighter in color, 
+                        about 2 minutes. Scrape down the bowl as needed.                   
+                    </h2>
+                </div>
+            </div>
+
+            <!-- third step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        3
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Next mix in the pumpkin and beat until well combined.                    
+                    </h2>
+                </div>
+            </div>
+
+            <!-- fourth step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        4
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        In a medium sized bowl, combine all remaining dry ingredients. 
+                        Then, add half the dry ingredients to the batter followed half the milk and beat until it starts to combine.                
+                    </h2>
+                </div>
+            </div>
+
+             <!-- fifth step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        5
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Finally add the remaining dry ingredients, mixing on low speed while pouring in the milk and beating until all of the ingredients are well combined.
+                    </h2>
+                </div>
+            </div>
+
+             <!-- sixth step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        6
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Use a spatula to scrape down the sides of the bowl and stir the batter from the bottom to the top to ensure it’s well mixed.                    
+                    </h2>
+                </div>
+            </div>
+
+             <!-- seventh step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        7
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Using a large cookie scoop, divide the batter evenly, filling each liner 2/3 full.                
+                    </h2>
+                </div>
+            </div>
+
+             <!-- eight step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        8
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Bake at 350°F for 14-16 minutes. Test the cupcakes for doneness by inserting a toothpick into 
+                        the center of the cupcake. If the toothpick comes out clean, the cupcakes are done. Cool Completely.                  
+                    </h2>
+                </div>
+            </div>
+
+             <!-- ninth step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        9
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        For the frosting: Cut the butter into 1-inch blocks. Beat the butter for 1-2 minutes until it is slightly softened.                  
+                    </h2>
+                </div>
+            </div>
+
+             <!-- tenth step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        10
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Then add the cream cheese and cream together for 2-3 minutes until they are fluffy and free of lumps, 
+                        scape down the bowl occasionally.                   
+                    </h2>
+                </div>
+            </div>
+
+             <!-- 11th step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        11
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Slowly add the confectionary sugar 2 cups at a time, 
+                        followed by the cinnamon vanilla extract and maple syrup and beat until desired consistency is reached.                    
+                    </h2>
+                </div>
+            </div>
+
+             <!-- 12th step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        12
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        Add the remaining powdered sugar and heavy whipping cream and beat until desired consistency, at least 2 minutes.                   
+                    </h2>
+                </div>
+            </div>
+
+            <!-- 13th step-->
+            <!-- three grids portioned by 1/5 1/5 3/5-->
+            <div style = "display: grid; grid-template-columns: 0.2fr 0.5fr 3fr; margin-top: 2%;">
+                <div>
+                    
+                </div>
+
+                <div style = "background: #DDD2C0; border-radius: 50%; width:120px; height:120px;">
+                    <h1 style = "line-height: 160%;">
+                        13
+                    </h1>
+                </div>
+                <div>
+                    <h2 class = "procedure">
+                        In a large piping bag fitted with a large open star pipping tip, pipe the frosting onto the cupcakes.                    
+                    </h2>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- -->
+        <div style = "margin-left: -4%; margin-top: -10%; width:6%;">
+            <a href = "#top"">
+                <img href = "index.html" src = "../images/akita.png" alt = "pixelated home art image" style = "width: 50px;" />
+                <h3 style = "font-size: 15px;margin-left: -10%; margin-top: 2%;" class = "home-typography">
+                    top
+                </h3>
+                
+                
+            </a>
+
+        </div>
+
+        
+    </body>
+</html>
